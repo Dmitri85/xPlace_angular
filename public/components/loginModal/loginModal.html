@@ -1,0 +1,19 @@
+<div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+    <div class="modal-dialog">
+        <div class="loginmodal-container">
+            <h1>Login to Your Account</h1><br>
+                <form ng-submit="$ctrl.submit($event)">
+                    <input type="text" required name="user" placeholder="Username" ng-model='$ctrl.user'>
+                    <input type="password" required name="pass" placeholder="Password" ng-model='$ctrl.pass'>
+                    <input  type="submit" name="login" 
+                            class="login loginmodal-submit" 
+                            value="Login"
+                            data-dismiss="{{modal}}"
+                            ng-click="$ctrl.modalClose()">
+                </form> 
+            <div class="login-help">
+                <a ng-href="/#/register">Register</a>
+            </div>
+        </div>
+    </div>
+</div>

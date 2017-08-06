@@ -1,0 +1,40 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Xplace</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script><!doctype html>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/moment.js/2.5.1/moment.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular-route.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/angular-moment/1.0.1/angular-moment.min.js'></script>
+    <script src="main.js"></script> 
+    <script src="./services/loginService.js"></script> 
+    <script src="./services/sqlMainService.js"></script> 
+    <script src="./components/navBar/navBar.js"></script> 
+    <script src="./components/loginModal/loginModal.js"></script> 
+    <script src="./components/register/register.js"></script> 
+    <script src="./components/postJob/postJob.js"></script> 
+    <script src="./components/agent/agent.js"></script> 
+    <script src="./components/profile/profile.js"></script> 
+    <script src="./components/positions/positions.js"></script> 
+    <script src="./components/positionsRow/positionsRow.js"></script> 
+    <script src="./components/appliedPositionRow/appliedPositionRow.js"></script> 
+    <script src="./routes.js"></script> 
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'/>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'/>
+    <link rel="stylesheet" href="./stylesheets/style.css"> 
+</head>
+
+<body ng-app="myApp">
+    <nav-bar></nav-bar>
+    <login-modal></login-modal>
+    <div class="wraper">
+        <ng-view></ng-view>
+    </div>
+    
+</body>
+
+</html>

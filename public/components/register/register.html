@@ -1,0 +1,87 @@
+<div class="container register">
+	<div class="row">
+		 <form class="form-horizontal" ng-submit="registerNewUser($event)">
+            <fieldset>
+                <h2>Registration</h2>
+         
+                <div class="control-group">
+                    <label class="control-label">User Name</label>
+                    <div class="controls">
+                        <input id="user-name" name="user-name" type="text" placeholder="User Name" required
+                        ng-model="username" class="input-xlarge">
+                        <p class="help-block"></p>
+                    </div>
+                </div>
+
+                 <div class="control-group">
+                    <label class="control-label">First name</label>
+                    <div class="controls">
+                        <input id="first-name" name="first-name" type="text" placeholder="First name" required
+                        ng-model="firstname" class="input-xlarge">
+                        <p class="help-block"></p>
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label">Last name</label>
+                    <div class="controls">
+                        <input id="Last-name" name="Last-name" type="text" placeholder="Last name" required
+                        ng-model="lastname" class="input-xlarge">
+                        <p class="help-block"></p>
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label">email</label>
+                    <div class="controls">
+                        <input id="mail" name="mail" type="email" placeholder="email" required
+                         ng-model="mail" class="input-xlarge">
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label">Password</label>
+                    <div class="controls">
+                        <input id="password" name="password" type="text" placeholder="password" required
+                        ng-model="password" class="input-xlarge">
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label">Company Name</label>
+                    <div class="controls">
+                        <input id="Company-name" name="Company-name" type="text" placeholder="Company Name" required
+                        ng-model="company" class="input-xlarge">
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label">About</label>
+                    <div class="controls">
+                        <textarea maxlength="450" ng-model="about" required></textarea>
+                    </div>
+                </div>
+                
+                <div class="control-group">
+                    <label class="control-label">Max distance</label>
+                    <div class="controls">
+                        <input id="postal-code" min="1" name="postal-code" type="number" placeholder="Max distance Km" required
+                        ng-model="maxDist" class="input-xlarge">
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label">City</label>
+                    <div class="controls">
+                        <select id="city" name="city" class="input-xlarge" ng-model="cityID" required>
+                            <option selected>chose city</option> 
+                            <option ng-repeat="city in cities" value="{{city.id}}">{{city.name}}</option>
+                        </select>
+                        <button class="btn btn-default"><a ng-href="/">Cancel</a></button>
+                        <button type="submit" class="btn btn-info">Sign in</button>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+	</div>
+</div>
+
